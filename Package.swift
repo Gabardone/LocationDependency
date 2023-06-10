@@ -6,12 +6,12 @@ import PackageDescription
 let package = Package(
     name: "LocationDependency",
     platforms: [
-        // We require Combine for the implementation so that limits what we support.
-        .iOS(.v11),
-        .macCatalyst(.v13),
+        // We're bound by SwiftUX minimum deployment version.
+        .iOS(.v14),
+        .macCatalyst(.v14),
         .macOS(.v11),
-        .tvOS(.v11),
-        .watchOS(.v4)
+        .tvOS(.v14),
+        .watchOS(.v7)
     ],
     products: [
         .library(

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import MiniDePin
+@_exported import GlobalDependencies
 
 /**
  A protocol to adopt for dependencies that require access to a `LocationManager`.

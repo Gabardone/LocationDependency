@@ -1,6 +1,6 @@
 //
 //  LocationManager.swift
-//  MiniDePin
+//  LocationDependency
 //
 //  Created by Óscar Morales Vivó on 5/20/23.
 //
@@ -8,7 +8,7 @@
 import Combine
 import CoreLocation
 import Foundation
-import SwiftUX
+@_exported import protocol SwiftUX.Property
 
 public enum TrackedLocation {
     /**

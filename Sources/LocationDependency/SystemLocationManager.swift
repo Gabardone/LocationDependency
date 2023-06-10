@@ -79,7 +79,9 @@ extension SystemLocationManager: LocationManager {
 
     func startUpdatingLocation() {
         DispatchQueue.main.async {
+            #if !os(tvOS)
             self.locationManager?.startUpdatingLocation()
+            #endif
         }
     }
 

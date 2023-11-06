@@ -20,7 +20,7 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/Gabardone/GlobalDependencies", from: "2.0.0"),
+        .package(url: "https://github.com/Gabardone/GlobalDependencies", branch: "MacroSupport"),
         .package(url: "https://github.com/Gabardone/SwiftUX", from: "1.0.0")
     ],
     targets: [

@@ -5,8 +5,17 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Gabardone/GlobalDependencies",
       "state" : {
-        "revision" : "dca8fb31eb9d6efc42b454aa4a5ea812d7d74c23",
-        "version" : "2.0.0"
+        "branch" : "MacroSupport",
+        "revision" : "5c459470b5df29f5ece204c828eeb7507b366e47"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-syntax.git",
+      "state" : {
+        "revision" : "6ad4ea24b01559dde0773e3d091f1b9e36175036",
+        "version" : "509.0.2"
       }
     },
     {

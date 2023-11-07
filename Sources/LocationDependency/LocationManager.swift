@@ -59,7 +59,7 @@ extension TrackedLocation: Equatable {
  testable. This protocol is used to wrap the parts of its functionality needed by the app, while allowing for an easy
  build of a testing mock.
  */
-@Dependency(defaultValueType: SystemLocationManager)
+@Dependency()
 public protocol LocationManager {
     /**
      A `Property` that manages the current authorization status and publishes its updates.
@@ -201,6 +201,12 @@ public extension LocationManager {
         default:
             return "Unable to obtain the user's location for mysterious reasons."
         }
+    }
+}
+
+private struct DefaultLocationManagerValueFactory: DefaultDependencyValueFactory {
+    static func makeDefaultValue() -> SystemLocationManager {
+        return SystemLocationManager()
     }
 }
 

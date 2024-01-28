@@ -206,7 +206,7 @@ public extension LocationManager {
 
 private struct DefaultLocationManagerValueFactory: DefaultDependencyValueFactory {
     static func makeDefaultValue() -> SystemLocationManager {
-        return SystemLocationManager()
+        SystemLocationManager()
     }
 }
 

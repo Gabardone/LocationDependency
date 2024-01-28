@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Gabardone/GlobalDependencies",
       "state" : {
-        "branch" : "MacroSupport",
-        "revision" : "a18d6e6198fce826e2c0f0ad4998c8f0b07b3945"
+        "revision" : "f2ac651059e19424046e98951f2572e7d5350d08",
+        "version" : "2.0.1"
       }
     },
     {
@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Gabardone/SwiftUX",
       "state" : {
-        "revision" : "15789dfd8f6c9cbcfa18956b269fc0673e518207",
-        "version" : "1.0.1"
+        "revision" : "46cbd8ea74b3116c4d12130a4be069288ae9245c",
+        "version" : "1.0.2"
       }
     }
   ],

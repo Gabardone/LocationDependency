@@ -1,7 +1,7 @@
 # LocationDependency
 [![Swift Package Manager compatible](https://img.shields.io/badge/SPM-compatible-4BC51D.svg?style=flat)](https://github.com/apple/swift-package-manager)
 [![MIT License](https://img.shields.io/badge/SPM-compatible-4BC51D.svg?style=flat)](https://mit-license.org/)
-[![Platforms](https://img.shields.io/badge/platform-ios%20%7C%20osx%20%7C%20watchos%20%7C%20tvos-%23989898)](https://apple.com/developer)
+[![Platforms](https://img.shields.io/badge/platform-ios%20%7C%20osx%20%7C%20tvos%20%7C%20visionos%20%7C%20watchos-%23989898)](https://apple.com/developer)
 
 This is a simple abstracted file system dependency built for use with
 [GlobalDependencies package](https://github.com/Gabardone/GlobalDependencies).

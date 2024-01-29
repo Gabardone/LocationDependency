@@ -1,4 +1,4 @@
-// swift-tools-version: 5.8
+// swift-tools-version: 5.9
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -11,6 +11,7 @@ let package = Package(
         .macCatalyst(.v14),
         .macOS(.v11),
         .tvOS(.v14),
+        .visionOS(.v1),
         .watchOS(.v7)
     ],
     products: [
@@ -20,8 +21,8 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/Gabardone/GlobalDependencies", from: "2.0.0"),
-        .package(url: "https://github.com/Gabardone/SwiftUX", from: "1.0.0")
+        .package(url: "https://github.com/Gabardone/GlobalDependencies", .upToNextMajor(from: "2.0.1")),
+        .package(url: "https://github.com/Gabardone/SwiftUX", .upToNextMajor(from: "1.0.2"))
     ],
     targets: [
         .target(

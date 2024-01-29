@@ -8,6 +8,7 @@
 import Combine
 import CoreLocation
 import Foundation
+@_exported import GlobalDependencies
 @_exported import protocol SwiftUX.Property
 
 public enum TrackedLocation {
@@ -58,6 +59,7 @@ extension TrackedLocation: Equatable {
  testable. This protocol is used to wrap the parts of its functionality needed by the app, while allowing for an easy
  build of a testing mock.
  */
+@Dependency()
 public protocol LocationManager {
     /**
      A `Property` that manages the current authorization status and publishes its updates.
@@ -200,4 +202,14 @@ public extension LocationManager {
             return "Unable to obtain the user's location for mysterious reasons."
         }
     }
+}
+
+private struct DefaultLocationManagerValueFactory: DefaultDependencyValueFactory {
+    static func makeDefaultValue() -> SystemLocationManager {
+        SystemLocationManager()
+    }
+}
+
+extension GlobalDependencies: LocationManager.Dependency {
+    public #GlobalDependency(type: LocationManager)
 }
